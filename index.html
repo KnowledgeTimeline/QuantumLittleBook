@@ -10,8 +10,8 @@
 </head>
 <body>
   <nav>
-    <a href="#/">EN</a>
-    <a href="#/zh-cn/">中文</a>
+    <a href="#/">简体中文</a>
+    <a href="#/en/">English</a>
   </nav>
 
   <div id="app">Loading...</div>
@@ -19,9 +19,30 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: ''
+      repo: '',
+
+      search: 'auto', // 默认值
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: [
+          '/',
+          '/en/',      // => /en/README.md
+        ], // or 'auto'
+        placeholder: {
+          '/': '搜索',
+          '/en/': 'Type to search'
+        },
+        noData: {
+          '/': '找不到结果',
+          '/en/': 'No Results'
+        },
+        // 搜索标题的最大层级, 1 - 6
+        depth: 2,
+      }
     }
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="/scripts/docsify.min.js"></script>
+  <script src="/scripts/search.min.js"></script>
+
 </body>
 </html>
