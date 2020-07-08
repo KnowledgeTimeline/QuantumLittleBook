@@ -52,6 +52,7 @@
 
   <script type="text/javascript" src="scripts/docsify_gitalk.min.js"></script>
   <script type="text/javascript" src="scripts/gitalk.min.js"></script>
+  <script type="text/javascript" src="scripts/md5.min.js"></script>
   <script>
   const gitalk = new Gitalk({
     clientID: '3b08b9ef5b44cfdf632c',
@@ -59,7 +60,7 @@
     repo: 'QuantumLittleBook',
     owner: 'KnowledgeTimeline',
     admin: ['taketimeasafriend'],
-    id: location.pathname,
+    id: md5(location.pathname),
     // facebook-like distraction free mode
     distractionFreeMode: true
   })
