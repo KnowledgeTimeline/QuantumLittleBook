@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>量子力学趣味简史</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -24,6 +24,20 @@
       repo: '',
 
       //ga: 'UA-151199059-1',
+
+      count: {
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(9,90,9)',
+        language:'chinese'
+      },
+
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+      },
 
       search: 'auto', // 默认值
       search: {
@@ -47,6 +61,9 @@
   </script>
   <script type="text/javascript" src="scripts/docsify.min.js"></script>
   <script type="text/javascript" src="scripts/search.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
   <!--<script type="text/javascript" src="scripts/ga.min.js"></script>-->
 
